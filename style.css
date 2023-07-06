@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,94,1) 35%, rgba(0,212,255,1) 100%);}
+.container{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,121,9,1) 35%, rgba(0,212,255,1) 100%);
+    width: 50%;
+    margin: auto;
+    min-height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 5px solid;
+    border-image: linear-gradient(45deg, purple, orange) 1;
+      
+   
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+input,textarea{
+    padding: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font: 100 1.1rem;
+    border-radius: 30px;
+    margin: 20px;
+    outline: none;
+    transition:.3s ease all ;
+    background-color: antiquewhite;
+    font-size: 20px;
+}
+button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    width: 30%;
+    text-align: center;
+    margin: 0 35%;
+    margin-top: 8px;
+    font-size: 25px;
+
+
+}
+ textarea:hover{
+    transform: scale(1.1);
+}
+
+input:hover{
+    transform: scale(1.1);
+}
+
+button:hover{
+    opacity:.8;
+    background-color: blue;
+}
+
+.task{
+    background-color: antiquewhite;
+    padding: 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin: 2vmax;
+}
+.task > div{                /* srf task  ke andar h usi pe apply hoga*/
+    width: 100%;
+    /* border: 1px solid red; */
+}
+ .task span{                   /*   jitte v span h spbe apply hoga   */
+       color: black;
+ }
+
+ .deleteBtn{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    background-color: tomato;
+    cursor: pointer;
+ }
+ .content{
+    /* align-items: center; */
+    /* background-color: red; */
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+    letter-spacing: 6px;
+    margin-bottom: 60px;
+    animation-delay: 250ms;
+ }
+ .content:hover
+ { 
+    /* width: 100%; */
+    transform: rotate(0.5turn);
+    /* background-color: antiquewhite; */
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+
+ }
